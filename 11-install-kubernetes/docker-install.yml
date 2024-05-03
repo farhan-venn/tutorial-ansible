@@ -4,7 +4,7 @@
   tasks:
     - name: update repo
       apt:
-        update_cache: yes
+        force_apt_get: yes
     
     - name: install dependency
       apt:
@@ -19,8 +19,8 @@
         src: ./docker-repo
         dest: /tmp/docker-repo
     
-    - name: install repo
-      shell: "sh -c 'chmod +x /tmp/docker-repo && /tmp/./docker-repo'"
+    # - name: install repo
+    #   shell: "sh -c 'chmod +x /tmp/docker-repo && /tmp/./docker-repo'"
              
     - name: install docker
       apt:

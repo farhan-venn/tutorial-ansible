@@ -2,5 +2,5 @@ all:
   hosts:
     server1:
       ansible_connection: ssh
-      ansible_host: "192.168.56.11"
-      ansible_user: vagrant
+      ansible_host: "103.250.10.234"
+      ansible_user: kel4

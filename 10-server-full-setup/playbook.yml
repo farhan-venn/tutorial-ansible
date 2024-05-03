@@ -24,10 +24,10 @@
         name: pymysql
         state: present
 
-    - name: Jalankan Webserver
-      service:
-        name: apache2
-        state: started
+    # - name: Jalankan Webserver
+    #   service:
+    #     name: apache2
+    #     state: started
 
     - name: Jalankan FTP
       service:
@@ -44,8 +44,8 @@
         src: ./setup-mysql
         dest: /tmp/
     
-    - name: Setup mysql
-      shell: "sh -c 'chmod +x /tmp/setup-mysql ; /tmp/./setup-mysql'"
+    # - name: Setup mysql
+    #   shell: "sh -c 'chmod +x /tmp/setup-mysql ; /tmp/./setup-mysql'"
 
     - name: Setup FTP
       template:
