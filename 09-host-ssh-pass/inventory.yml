@@ -2,7 +2,7 @@ all:
   hosts:
     server1:
       ansible_connection: ssh
-      ansible_host: "103.250.10.234"
+      ansible_host: "103.30.194.30"
       ansible_user: kel4
       ansible_password: Kelompok4
       ansible_port: 22
